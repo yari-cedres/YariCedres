@@ -7,6 +7,31 @@
     <title>Document</title>
 </head>
 <body>
- hola mundo
+    <table border =1>
+        <tr>
+         <tr><td>alumno</td><td>email</td></tr>
+        <tr></tr><td>juan</td> <td>juan@</td></tr>
+        <tr><td>juana</td><td> </td> </tr>
+        </tr>
+        <div style="background-color: brown;color: red;text-align: center;">
+        yari <br>cedres <br></div>
+    </table>
+    <div>
+        <form id="form" method="get" action="" name="formulario">
+            <h3> usuario: </h3>
+                <input type="text" name="usuario_text"/>
+                <input type="button" name="usuario_boton" value="enviar"/>
+            <h3> contrasenia: </h3>
+                <input type="password" name="usuario_password"/> 
+                <input type="submit" name="usuario_boton22" value="enviar"/>
+        </form>
+    </div>
+     <input type="button" name="usuario_boton33" value="enviar" onclick="saludar()"/>
 </body>
 </html>
+<script>
+    function saludar() {
+        alert("hola mundo");
+    }
+    saludar();
+</script>
