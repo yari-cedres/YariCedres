@@ -59,16 +59,43 @@ let superh ={
 
 //}
 
+
+var poder;
+
+
+
+
 function superhero(){
-    for(let i=0;i<superh.members.length;i++){
-     
-        if (superh.members[i].age>100){
-            let result = superh.members[i].name
-             document.getElementById("res").innerHTML = result
-        }
+
+   for(let i=0;i<superh.members.length;i++){
+
+    document.getElementById("nom"+i).innerText = "nombre:" +  superh.members[i].name 
+
+    document.getElementById("edad"+i).innerText = "edad:" +  superh.members[i].age
+
+    document.getElementById("iden"+i).innerText = "identidad:" +  superh.members[i].secretIdentity
+
+    poder= "poderes: "
+    poder= poder + superh.members[i].powers[0]
+
+    for(let b=1;b<superh.members[i].powers.length;b++){
+
+      poder = poder +", "+ superh.members[i].powers[b]
+
 
     }
+
+  document.getElementById("poder"+i).innerText =  poder
+
+}
+
 }
 function reset(){
-    document.getElementById("res").innerText = ""
+  for(let i=0;i<superh.members.length;i++){
+    document.getElementById("nom"+i).innerText=''
+    document.getElementById("edad"+i).innerText=''
+    document.getElementById("iden"+i).innerText=''
+    document.getElementById("poder"+i).innerText=''
+
+  }
 }
