@@ -79,11 +79,12 @@ let dni_entrante = document.getElementById("DNI").value;
 
 
 
- /*   let existe = arraySocios.some(vuelta => vuelta.dni == dni_entrante)
+  /* let existe = arraySocios.some(vuelta => vuelta.dni == dni_entrante)
 
   
 
  if (existe == false) {
+
     
   } else{
     arraySocios.forEach((element) => {
