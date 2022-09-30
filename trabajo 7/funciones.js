@@ -4,6 +4,8 @@
 //  console.log(data)
 //})
 function resul() {
+
+  
   fetch("https://randomuser.me/api/")
     .then((res) => res.json())
     .then((res) => {
